@@ -16,5 +16,5 @@ def encode_tokens(tokens):
 
 def decode_tokens(tokens):
     tokenizer = get_tokenizer("bert-base-uncased")
-    decoded_text = tokenizer.convert_tokens_to_string(tokens)
+    decoded_text = tokenizer.decode(tokens)
     return decoded_text
